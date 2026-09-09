@@ -1,0 +1,320 @@
+{
+  "Onion": {
+    "chosen_split": "80/20",
+    "split_reason": "80/20 already yields 99 test spikes (>= threshold of 5).",
+    "train_date_range": [
+      "2013-07-10",
+      "2021-11-16"
+    ],
+    "test_date_range": [
+      "2021-11-17",
+      "2023-06-29"
+    ],
+    "train_rows": 1814,
+    "test_rows": 454,
+    "train_positive": 412,
+    "test_positive": 99,
+    "feature_count": 19,
+    "features": [
+      "price",
+      "min_price",
+      "max_price",
+      "n_varieties_reported",
+      "sentiment_positive_mean",
+      "sentiment_neutral_mean",
+      "sentiment_negative_mean",
+      "article_count",
+      "sentiment_dispersion",
+      "has_news",
+      "lag_1_price",
+      "pct_change_1d",
+      "pct_change_3d",
+      "rolling_mean_3d",
+      "rolling_std_3d",
+      "rolling_mean_7d",
+      "rolling_std_7d",
+      "momentum_7d",
+      "intraday_price_range"
+    ],
+    "models": {
+      "logistic_regression": {
+        "commodity": "Onion",
+        "model": "Logistic Regression",
+        "accuracy": 0.6387665198237885,
+        "precision": 0.2875816993464052,
+        "recall": 0.4444444444444444,
+        "f1": 0.3492063492063492,
+        "roc_auc": 0.5893868260065442,
+        "roc_auc_note": null,
+        "n_test": 454,
+        "n_test_positive": 99,
+        "confusion_matrix": [
+          [
+            246,
+            109
+          ],
+          [
+            55,
+            44
+          ]
+        ]
+      },
+      "random_forest": {
+        "commodity": "Onion",
+        "model": "Random Forest",
+        "accuracy": 0.7136563876651982,
+        "precision": 0.3258426966292135,
+        "recall": 0.29292929292929293,
+        "f1": 0.30851063829787234,
+        "roc_auc": 0.5850618864703372,
+        "roc_auc_note": null,
+        "n_test": 454,
+        "n_test_positive": 99,
+        "confusion_matrix": [
+          [
+            295,
+            60
+          ],
+          [
+            70,
+            29
+          ]
+        ]
+      },
+      "xgboost": {
+        "commodity": "Onion",
+        "model": "XGBoost",
+        "accuracy": 0.6519823788546255,
+        "precision": 0.21904761904761905,
+        "recall": 0.23232323232323232,
+        "f1": 0.22549019607843138,
+        "roc_auc": 0.5275288092189501,
+        "roc_auc_note": null,
+        "n_test": 454,
+        "n_test_positive": 99,
+        "confusion_matrix": [
+          [
+            273,
+            82
+          ],
+          [
+            76,
+            23
+          ]
+        ]
+      }
+    }
+  },
+  "Soyabean": {
+    "chosen_split": "80/20",
+    "split_reason": "80/20 already yields 63 test spikes (>= threshold of 5).",
+    "train_date_range": [
+      "2013-07-09",
+      "2021-08-28"
+    ],
+    "test_date_range": [
+      "2021-08-29",
+      "2023-06-29"
+    ],
+    "train_rows": 1938,
+    "test_rows": 485,
+    "train_positive": 114,
+    "test_positive": 63,
+    "feature_count": 19,
+    "features": [
+      "price",
+      "min_price",
+      "max_price",
+      "n_varieties_reported",
+      "sentiment_positive_mean",
+      "sentiment_neutral_mean",
+      "sentiment_negative_mean",
+      "article_count",
+      "sentiment_dispersion",
+      "has_news",
+      "lag_1_price",
+      "pct_change_1d",
+      "pct_change_3d",
+      "rolling_mean_3d",
+      "rolling_std_3d",
+      "rolling_mean_7d",
+      "rolling_std_7d",
+      "momentum_7d",
+      "intraday_price_range"
+    ],
+    "models": {
+      "logistic_regression": {
+        "commodity": "Soyabean",
+        "model": "Logistic Regression",
+        "accuracy": 0.6453608247422681,
+        "precision": 0.25339366515837103,
+        "recall": 0.8888888888888888,
+        "f1": 0.39436619718309857,
+        "roc_auc": 0.8758369066425938,
+        "roc_auc_note": null,
+        "n_test": 485,
+        "n_test_positive": 63,
+        "confusion_matrix": [
+          [
+            257,
+            165
+          ],
+          [
+            7,
+            56
+          ]
+        ]
+      },
+      "random_forest": {
+        "commodity": "Soyabean",
+        "model": "Random Forest",
+        "accuracy": 0.9051546391752577,
+        "precision": 0.6197183098591549,
+        "recall": 0.6984126984126984,
+        "f1": 0.6567164179104478,
+        "roc_auc": 0.8729218385616491,
+        "roc_auc_note": null,
+        "n_test": 485,
+        "n_test_positive": 63,
+        "confusion_matrix": [
+          [
+            395,
+            27
+          ],
+          [
+            19,
+            44
+          ]
+        ]
+      },
+      "xgboost": {
+        "commodity": "Soyabean",
+        "model": "XGBoost",
+        "accuracy": 0.8948453608247423,
+        "precision": 0.5882352941176471,
+        "recall": 0.6349206349206349,
+        "f1": 0.6106870229007634,
+        "roc_auc": 0.8395960279846536,
+        "roc_auc_note": null,
+        "n_test": 485,
+        "n_test_positive": 63,
+        "confusion_matrix": [
+          [
+            394,
+            28
+          ],
+          [
+            23,
+            40
+          ]
+        ]
+      }
+    }
+  },
+  "Wheat": {
+    "chosen_split": "70/30",
+    "split_reason": "80/20 only yields 1 test spikes; 70/30 improves this to 3 - still below threshold, but meaningfully better.",
+    "train_date_range": [
+      "2013-07-08",
+      "2020-08-13"
+    ],
+    "test_date_range": [
+      "2020-08-14",
+      "2023-06-29"
+    ],
+    "train_rows": 1990,
+    "test_rows": 853,
+    "train_positive": 8,
+    "test_positive": 3,
+    "feature_count": 19,
+    "features": [
+      "price",
+      "min_price",
+      "max_price",
+      "n_varieties_reported",
+      "sentiment_positive_mean",
+      "sentiment_neutral_mean",
+      "sentiment_negative_mean",
+      "article_count",
+      "sentiment_dispersion",
+      "has_news",
+      "lag_1_price",
+      "pct_change_1d",
+      "pct_change_3d",
+      "rolling_mean_3d",
+      "rolling_std_3d",
+      "rolling_mean_7d",
+      "rolling_std_7d",
+      "momentum_7d",
+      "intraday_price_range"
+    ],
+    "models": {
+      "logistic_regression": {
+        "commodity": "Wheat",
+        "model": "Logistic Regression",
+        "accuracy": 0.9788980070339977,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.44509803921568625,
+        "roc_auc_note": null,
+        "n_test": 853,
+        "n_test_positive": 3,
+        "confusion_matrix": [
+          [
+            835,
+            15
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "random_forest": {
+        "commodity": "Wheat",
+        "model": "Random Forest",
+        "accuracy": 0.9964830011723329,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.6490196078431372,
+        "roc_auc_note": null,
+        "n_test": 853,
+        "n_test_positive": 3,
+        "confusion_matrix": [
+          [
+            850,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "xgboost": {
+        "commodity": "Wheat",
+        "model": "XGBoost",
+        "accuracy": 0.9964830011723329,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.39960784313725495,
+        "roc_auc_note": null,
+        "n_test": 853,
+        "n_test_positive": 3,
+        "confusion_matrix": [
+          [
+            850,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

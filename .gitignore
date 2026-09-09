@@ -1,0 +1,27 @@
+# Environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets (if a HF token or API key ever gets added to a .env file)
+.env
+
+# Raw price data - the 26 yearly parquet files at project root, ~700MB+ total,
+# publicly re-downloadable from Kaggle, does not belong in git history
+Data/
+
+# Raw news data - 285MB CSV, same reasoning
+data/raw/news/
+
+# Leftover archives from earlier downloads - never needed once extracted
+archive.zip
+Data.zip
+*.zip
+
+# OS clutter
+.DS_Store
+Thumbs.db
