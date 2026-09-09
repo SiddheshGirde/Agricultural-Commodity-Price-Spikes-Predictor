@@ -7,17 +7,20 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Secrets (if a HF token or API key ever gets added to a .env file)
+# Secrets
 .env
 
-# Raw price data - the 26 yearly parquet files at project root, ~700MB+ total,
-# publicly re-downloadable from Kaggle, does not belong in git history
-Data/
+# Raw price data - the price dataset's 26 yearly parquet files at
+# C:\Users\siddh\Desktop\PBL\Data\parquet - full path, not just "Data/",
+# to avoid Windows' case-insensitive filesystem matching this against
+# the unrelated lowercase data/interim/ and data/raw/ folders
+/Data/parquet/
+/Data/csv/
 
-# Raw news data - 285MB CSV, same reasoning
+# Raw news data
 data/raw/news/
 
-# Leftover archives from earlier downloads - never needed once extracted
+# Leftover archives
 archive.zip
 Data.zip
 *.zip
